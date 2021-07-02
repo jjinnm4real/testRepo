@@ -14,7 +14,7 @@ pipeline{
         stage ('Build') {
             steps {
                 dir('testRepo') {
-                    powershell -command ls
+                    sh powershell -command ls
                 }    
             }
         }
