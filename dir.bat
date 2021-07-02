@@ -1,0 +1,1 @@
+dir config.json /S /B
