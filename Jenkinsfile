@@ -14,11 +14,12 @@ pipeline{
         stage ('Build') {
             steps {
                 dir('testRepo') {
-                    sh "dir config.json /S /B"
+                    #sh "dir config.json"
+
                 }    
             }
         }
         
     }
     
-}     
+}    
