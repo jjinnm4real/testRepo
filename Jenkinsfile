@@ -14,11 +14,11 @@ pipeline{
         stage ('Build') {
             steps {
                 dir('testRepo') {
-                    sh powershell -command ls
+                    sh pwd
                 }    
             }
         }
         
     }
     
-}    
+}     
