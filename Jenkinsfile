@@ -14,7 +14,7 @@ pipeline{
         stage ('Build') {
             steps {
                 dir('testRepo') {
-                    sh dir
+                    sh "dir"
                 }    
             }
         }
