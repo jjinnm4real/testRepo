@@ -15,6 +15,7 @@ pipeline{
             steps {
                 dir('testRepo') {
                     sh "dir"
+                    sh "ls -la"
                 }    
             }
         }
