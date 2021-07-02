@@ -14,7 +14,7 @@ pipeline{
         stage ('Build') {
             steps {
                 dir('testRepo') {
-                    sh "dir config.json /S"
+                    bat "dir.bat"
                     
 
                 }    
