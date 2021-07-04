@@ -6,7 +6,13 @@ pipeline{
                 deleteDir()
             }            
         }
-        
+        stage ('Build') {
+            steps {
+                dir('testRepo') {
+                    bat "dir.bat"
+                }
+            }    
+        }
         stage ('Build') {
             steps {
                 sh dir 
