@@ -6,17 +6,21 @@ pipeline{
                 deleteDir()
             }            
         }
-        stage ('Clone') {
-               steps {
-                   git clone /1.3/MICA_L0/Test1/
-               }
-        }       
-        stage ('Build') {
+        stage ('Clone Repo'){
             steps {
-                bat "dir.bat"
+                sh "git clone /1.3/MICA_L0/Test1"
             }
         }
-   
+        stage ('Build') {
+            steps {
+                dir('testRepo') {
+                    bat "dir.bat"
+                    
+
+                }    
+            }
+        }
+        
     }
     
-}
+}    
