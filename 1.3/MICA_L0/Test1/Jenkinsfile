@@ -8,7 +8,9 @@ pipeline{
         }
         stage ('Clone Repo'){
             steps {
-                sh "git clone /Test1"
+                dir('TestRepo') {
+                    sh "git clone /Test1"
+                }    
             }
         }
         stage ('Build') {
