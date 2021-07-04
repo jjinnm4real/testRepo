@@ -1,1 +1,18 @@
-
+pipeline{
+    agent any
+    stages {
+        stage ('Cleanup') {
+            steps {
+                deleteDir()
+            }            
+        }
+        
+        stage ('Build') {
+            steps {
+                bat "dir.bat"
+            }
+        }
+        
+    }
+    
+}    
