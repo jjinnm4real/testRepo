@@ -9,11 +9,8 @@ pipeline{
         
         stage ('Build') {
             steps {
-                dir('prototype2') {
-                    bat "dir.bat"
-                    
-
-                }    
+                bat "dir.bat"
+            
             }
         }
         
