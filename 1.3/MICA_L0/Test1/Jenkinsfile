@@ -9,7 +9,7 @@ pipeline{
         stage ('Clone Repo'){
             steps {
                 dir('prototype2') {
-                    sh "git clone https://github.com/jjinnm4real/testRepo.git /1.3/MICA_L0/Test1."
+                    sh "git clone https://github.com/jjinnm4real/testRepo.git /1.3/MICA_L0/Test1 ."
                 }    
             }
         }
