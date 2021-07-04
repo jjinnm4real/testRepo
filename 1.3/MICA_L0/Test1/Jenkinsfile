@@ -8,14 +8,14 @@ pipeline{
         }
         stage ('Clone Repo'){
             steps {
-                dir('TestRepo') {
+                dir('MICA L0 Test1') {
                     sh "git clone /Test1"
                 }    
             }
         }
         stage ('Build') {
             steps {
-                dir('testRepo') {
+                dir('MICA L0 Test1') {
                     bat "dir.bat"
                     
 
